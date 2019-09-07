@@ -1,0 +1,16 @@
+from  sys import argv
+script,filename=argv
+print("this is your filename %r " %(filename))
+input("? \n")
+target=open(filename,'w')
+print("Truncating the file \n")
+target.truncate()
+print("Now i am asking you  three question please answer this ")
+line1=input()
+line2=input()
+line3=input()
+target.write(line1)
+print("\n")
+target.write(line2)
+print("\n")
+target.write(line3)
